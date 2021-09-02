@@ -1,0 +1,2 @@
+store these programs at 0x800001 - 0x900000
+store shell.asm right below the kernel

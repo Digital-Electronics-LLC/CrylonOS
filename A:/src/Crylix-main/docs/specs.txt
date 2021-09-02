@@ -1,0 +1,14 @@
+OS specs(or, the specs i'm looking for in v1.0):
+-single tasking CLI
+-able to create and terminate processes
+-have a simple file system called vsfs
+-the filesystem able to create, remove, read, and write directories and files
+-a text editor and assembler
+-a compiler for a language called vspl(very simple programming language); the compiler is called vsplc(vspl compiler)
+
+Machine Specs(CrylonPC G1):
+-16 MB memory
+-24 bit data and address
+-2 MHz clock speed
+-250000 instructions per second
+-runs CrylonOS(duh)
