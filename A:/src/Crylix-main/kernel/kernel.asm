@@ -148,20 +148,23 @@ writeFile:
 ;|        Code        |
 ;|--------------------|
 
-loadi A, "W"
+loadi A, "k"
+call print_char
+loadi A, "e"
+call print_char
+loadi A, "r"
+call print_char
+loadi A, "n"
 call print_char
 loadi A, "e"
 call print_char
 loadi A, "l"
 call print_char
-loadi A, "c"
+loadi A, "0"
 call print_char
-loadi A, "o"
+loadi A, "."
 call print_char
-loadi A, "m"
+loadi A, "5"
 call print_char
-loadi A, "e"
-call print_char
-
 end:
   jump end
