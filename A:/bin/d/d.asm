@@ -1,1 +1,1 @@
-;the "l" command means list the directories
+;the "d" command means list the directories
