@@ -1,4 +1,4 @@
-;simple bootloader by DiamondCoder1000
+; VSBoot by DiamondCoder1000
 ;store this in ROM, not Flash
 
 ssdr $0000, $0000 ;SSD read block 0 to address 0, overwriting this instruction
