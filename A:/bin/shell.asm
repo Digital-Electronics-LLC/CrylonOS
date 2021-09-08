@@ -1,3 +1,10 @@
+;VSTS(very simple text shell) by DiamondCoder1000
+
+include A:/bin/d
+include A:/bin/f
+include A:/bin/h
+include A:/bin/o
+
 loadi A, "s"
 call print_char
 loadi A, "e"
