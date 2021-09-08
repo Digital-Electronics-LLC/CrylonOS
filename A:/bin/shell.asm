@@ -18,6 +18,7 @@ loadi A, "0"
 call print_char
 loadi A, "."
 call print_char
+loadi A, "1"
 
 end:
   jump end
