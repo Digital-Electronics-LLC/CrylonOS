@@ -27,3 +27,4 @@ ind             reg, reg       0x000019      inputs data from device address in 
 outd            addr, reg      0x00001a      outputs data to device address in [reg] from register [reg]
 ssdr            blck, addr     0x00001b      reads data from the SSD block [blck] to location [addr]
 ssdw            blck, addr     0x00001c      writes data from the SSD block [blck] to location [addr]
+nop             N/A            0x00001d      no operation
