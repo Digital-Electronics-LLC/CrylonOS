@@ -9,5 +9,5 @@ panic:
   loadi A, "i"
   call print_char
   loadi A, "c"
-  jump 3
+  jump panic
   
