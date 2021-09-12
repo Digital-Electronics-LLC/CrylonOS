@@ -87,8 +87,8 @@ call print_char
 
 ;testing memory
 loadi A, 10
-store A, 0x101401
-load B, 0x101401
+store A, 0x400000
+load B, 0x400000
 loadi A, 10
 comp A, B
 je the_end
