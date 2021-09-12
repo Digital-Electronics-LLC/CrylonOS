@@ -97,7 +97,7 @@ call panic; panic! the memory doesn't work!
 shell_init:
   %include A:/bin/shell.asm
 
-jump the_end; end of OS
+jmp the_end; end of OS
 
 the_end:
   call end
