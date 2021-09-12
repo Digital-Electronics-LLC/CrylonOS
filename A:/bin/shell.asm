@@ -4,6 +4,7 @@
 %include A:/bin/f
 %include A:/bin/h
 %include A:/bin/o
+%include A:/src/Crylix-main/kernel/kernel.asm
 
 loadi A, "s"
 call print_char
