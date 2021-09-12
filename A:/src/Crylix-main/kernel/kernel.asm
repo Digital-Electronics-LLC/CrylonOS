@@ -83,4 +83,14 @@ call print_char
 loadi A, "5"
 call print_char
 
-call end
+;testing memory
+loadi A, 10
+store A, 0x001401
+load B, 0x001401
+loadi A, 10
+comp A, B
+je the_end
+call panic; panic! the memory doesn't work!
+
+the_end:
+  call end
