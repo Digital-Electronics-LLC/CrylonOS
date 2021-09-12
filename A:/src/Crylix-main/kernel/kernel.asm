@@ -76,6 +76,8 @@ loadi A, "e"
 call print_char
 loadi A, "l"
 call print_char
+loadi A, " "
+call print_char
 loadi A, "0"
 call print_char
 loadi A, "."
