@@ -1,9 +1,10 @@
 ;VSTS(very simple text shell) by DiamondCoder1000
 
-%include A:/bin/d
-%include A:/bin/f
-%include A:/bin/h
-%include A:/bin/o
+%include A:/bin/e/e.asm
+%include A:/bin/d/d.asm
+%include A:/bin/f/f.asm
+%include A:/bin/h/h.asm
+%include A:/bin/o/o.asm
 %include A:/src/Crylix-main/kernel/sys_calls/print_char.asm
 %include A:/src/Crylix-main/kernel/sys_calls/input_char.asm
 
