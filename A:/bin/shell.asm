@@ -29,7 +29,7 @@ main:
   call input_char
   loadi B, "e"
   comp A, B
-  je command_e
+  jmpif command_e, E
 command_e: call e  
 
 
