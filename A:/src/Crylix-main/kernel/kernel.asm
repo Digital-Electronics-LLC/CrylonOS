@@ -91,13 +91,10 @@ store A, 0x400000
 load B, 0x400000
 loadi A, 10
 comp A, B
-je shell_init
+jmpif shell_init, E
 call panic; panic! the memory doesn't work!
 
 shell_init:
   %include A:/bin/shell.asm
-
-jmp the_end; end of OS
-
-the_end:
-  call end
+  call main
+  
