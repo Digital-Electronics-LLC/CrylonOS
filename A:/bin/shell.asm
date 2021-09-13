@@ -32,6 +32,7 @@ main:
   comp A, B
   jmpif command_e, E
 command_e: call e  
+  jump main
 
 
   
