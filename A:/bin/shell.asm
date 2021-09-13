@@ -24,7 +24,12 @@ init:
   loadi A, "1"
 
 main:
+  ;the e command
   xor A, A
   call input_char
-  loadi B, "e"; unfinished
+  loadi B, "e"
+  je command_e
+command_e: call e  
+
+
   
