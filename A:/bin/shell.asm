@@ -28,6 +28,7 @@ main:
   xor A, A
   call input_char
   loadi B, "e"
+  comp A, B
   je command_e
 command_e: call e  
 
