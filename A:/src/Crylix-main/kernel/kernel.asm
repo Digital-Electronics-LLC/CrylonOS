@@ -41,23 +41,8 @@ malloc:
 ;|-------------------|
 
 
-;vsfs by DiamondCoder1000
-;very simple file system
-createFile:
-  ;unfinished
-  ret
+%include A:/src/Crylix-main/kernel/vsfs/vsfs.asm
 
-deleteFile:
-  ;unfinished
-  ret
-
-readFile:
-  ;unfinished
-  ret
-
-writeFile:
-  ;you guessed it, unfinished
-  ret
 
 ;|--------------------|
 ;|        Code        |
