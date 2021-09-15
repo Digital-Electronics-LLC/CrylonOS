@@ -1,4 +1,4 @@
-;simpleFS by DiamondCoder1000
+;vsfs by DiamondCoder1000
 ;very simple file system
 createFile:
   ;unfinished
