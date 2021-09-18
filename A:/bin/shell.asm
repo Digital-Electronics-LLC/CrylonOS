@@ -31,6 +31,8 @@ main:
   comp A, B
   jmpif command_e, E
 command_e: call e  
+  loadi A, "\n"
+  call print_char
   jump main
 
 
