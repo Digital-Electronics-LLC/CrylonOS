@@ -24,7 +24,8 @@ init:
   loadi A, "1"
 
 main:
-  ;the e command
+  loadi A, ">"
+  call print_char
   xor A, A
   call input_char
   loadi B, "e"
