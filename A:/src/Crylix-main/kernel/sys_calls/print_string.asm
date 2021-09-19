@@ -4,7 +4,7 @@ print_string:
   
   repeat:
     lodsb A
-    cmp A, B
+    comp A, B
     jmpif done, E
     
     call print_char
