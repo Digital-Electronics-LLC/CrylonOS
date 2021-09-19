@@ -18,7 +18,8 @@
 %include A:/src/Crylix-main/kernel/sys_calls/print_hex.asm
 %include A:/src/Crylix-main/kernel/sys_calls/readSSD.asm
 %include A:/src/Crylix-main/kernel/sys_calls/writeSSD.asm
-  
+%include A:/src/Crylix-main/kernel/sys_calls/print_string.asm; yesssssssss
+
 ;|--------------------------|
 ;|                          |
 ;|        MALLOC            |
@@ -59,7 +60,7 @@ loadi A, "0"
 call print_char
 loadi A, "."
 call print_char
-loadi A, "5"
+loadi A, "9"
 call print_char
 
 ;testing memory
