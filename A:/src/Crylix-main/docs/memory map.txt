@@ -5,7 +5,7 @@ RAM(4 MB)
 0x001401 - 0x101401: heap
 0x101402 - 0x400000: free for variables
 
-stack(4 MB)
+stack, which is part of RAM(4 MB)
 
 0x400001 - 0x800000: stack
 
