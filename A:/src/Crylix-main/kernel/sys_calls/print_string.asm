@@ -3,7 +3,7 @@ print_string:
   push B
   
   repeat:
-    lodsb A
+    copy B, A
     comp A, B
     jmpif done, E
     
