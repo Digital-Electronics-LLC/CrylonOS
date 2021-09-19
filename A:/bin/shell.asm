@@ -6,7 +6,7 @@
 %include A:/bin/o/o.asm
 %include A:/src/Crylix-main/kernel/sys_calls/print_char.asm
 %include A:/src/Crylix-main/kernel/sys_calls/input_char.asm
-%include A:/src/Crylix-main/kernel/sys_calls/print_char.asm
+%include A:/src/Crylix-main/kernel/sys_calls/print_string.asm
 
 init:
   loadi A, "s"
