@@ -23,6 +23,7 @@ init:
   loadi A, "."
   call print_char
   loadi A, "1"
+  
 
 main:
   loadi A, ">"
