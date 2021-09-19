@@ -2,6 +2,8 @@
 ;i can actually code this, but i have to take an eye break
 ;don't wanna go blind!
 
+%include A:/src/Crylix-main/kernel/sys_calls/print_char.asm
+
 h:
   loadi A, "c"
   call print_char
