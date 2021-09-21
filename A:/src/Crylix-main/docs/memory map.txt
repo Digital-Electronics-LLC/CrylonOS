@@ -1,17 +1,17 @@
-RAM(4 MB)
+RAM(4 Megawords)
 
 0x000000 - 0x00ffff: kernel space
 0x001000 - 0x001400: malloc table
 0x001401 - 0x201401: heap
 0x201402 - 0x400000: free for variables
 
-stack, which is part of RAM(4 MB)
+stack, which is part of RAM(4 Megawords)
 
 0x400001 - 0x800000: stack
 
-Flash ROM(8 MB)
+Flash ROM(8 Megawords)
 Note: the FLash ROM is divided into 2048 4 kiloword large "blocks" by vsfs
-the Flash is divided into directories A: and B:, which are both 4 MB in size
+the Flash ROM is divided into directories A: and B:, which are both 4 Megawords in size
 
 A:\
 0x600001 - 0x800000: where the OS is stored
