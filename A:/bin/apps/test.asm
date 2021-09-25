@@ -1,4 +1,4 @@
-message         data "hello from CrylonOS!"
+message:      data "hello from CrylonOS!"
 
 load A, message
 call print_string
