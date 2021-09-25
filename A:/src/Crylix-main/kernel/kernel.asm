@@ -42,26 +42,12 @@
 ;|        Code        |
 ;|--------------------|
 
-loadi A, "k"
-call print_char
-loadi A, "e"
-call print_char
-loadi A, "r"
-call print_char
-loadi A, "n"
-call print_char
-loadi A, "e"
-call print_char
-loadi A, "l"
-call print_char
-loadi A, " "
-call print_char
-loadi A, "0"
-call print_char
-loadi A, "."
-call print_char
-loadi A, "9"
-call print_char
+;strings
+kernel_string:      data "Crylix Kernel 0.12"
+shell_init_string:      data "initializing shell..."
+
+load A, kernel_string
+call print_string
 
 ;testing memory
 loadi A, 10
