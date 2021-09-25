@@ -59,6 +59,10 @@ jmpif shell_init, E
 call panic; panic! the memory doesn't work!
 
 shell_init:
+  xor A, A
+  load A, shell_init_string
+  call print char
+  xor A,A
   %include A:/bin/shell.asm
   call main
   
