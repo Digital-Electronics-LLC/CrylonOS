@@ -1,4 +1,4 @@
-;CrylixOS kernel by DiamondCoder1000
+;CrylonOS kernel by DiamondCoder1000
 ;basically, the OS
 ;store in SSD at block 0
 
