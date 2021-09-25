@@ -1,5 +1,4 @@
 print_string:
-  push A
   push B
   
   repeat:
@@ -10,6 +9,6 @@ print_string:
     call print_char
     jump repeat
   done:
-    pop A
+    xor A, A
     pop B
     ret
