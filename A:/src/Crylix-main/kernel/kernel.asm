@@ -43,8 +43,8 @@
 ;|--------------------|
 
 ;strings
-kernel_string:      data "Crylix Kernel 0.12"
-shell_init_string:      data "initializing shell..."
+kernel_string:      data "Crylix Kernel 0.12", 0
+shell_init_string:      data "initializing shell...", 0
 
 load A, kernel_string
 call print_string
