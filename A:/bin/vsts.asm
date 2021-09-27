@@ -32,6 +32,7 @@ init:
 main:
   loadi A, ">"
   call print_char
+  ;the E command
   xor A, A
   call input_char
   loadi B, "e"
