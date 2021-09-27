@@ -7,6 +7,10 @@
 %include A:/src/Crylix-main/kernel/sys_calls/print_char.asm
 %include A:/src/Crylix-main/kernel/sys_calls/input_char.asm
 %include A:/src/Crylix-main/kernel/sys_calls/print_string.asm
+%include A:/bin/apps/basic.asm
+%include A:/bin/apps/calculator.asm
+%include A:/bin/apps/test.asm
+%include A:/bin/apps/vste.asm
 
 init:
   loadi A, "s"
