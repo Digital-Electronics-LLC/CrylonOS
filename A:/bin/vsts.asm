@@ -32,13 +32,17 @@ init:
 main:
   loadi A, ">"
   call print_char
-  ;the E command
   xor A, A
   call input_char
+  ;the "E" command
   loadi B, "e"
   comp A, B
   jmpif command_e, E
-command_e: call e  
+  xor B, B
+  ;the "H" command
+  
+  command_e: call e
+  command_h: call h
   loadi A, "\n"
   call print_char
   jump main
