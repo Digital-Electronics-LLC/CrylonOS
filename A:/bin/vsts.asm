@@ -40,6 +40,10 @@ main:
   jmpif command_e, E
   xor B, B
   ;the "H" command
+  loadi B, "h"
+  comp A, B
+  jmpif command_h, E
+  xor B, B
   
   command_e: call e
   command_h: call h
