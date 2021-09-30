@@ -9,7 +9,7 @@
 %include A:/src/Crylix-main/kernel/sys_calls/print_string.asm
 %include A:/bin/apps/basic.asm
 %include A:/bin/apps/calculator.asm
-%include A:/bin/apps/test.asm
+%include A:/bin/apps/hello_test.asm
 %include A:/bin/apps/vste.asm
 
 init:
