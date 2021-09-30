@@ -28,6 +28,7 @@ init:
   call print_char
   loadi A, "1"
   
+ERRORSTRING:      data "ERROR: COMMAND, PROGRAM, OR FILE NOT FOUND"
 
 main:
   loadi A, ">"
@@ -45,8 +46,18 @@ main:
   jmpif command_h, E
   xor B, B
   
-  command_e: call e
-  command_h: call h
+  command_e: 
+    call e
+    jump NoError
+  command_h: 
+    call h
+    jump NoError
+  NoError:
+    loadi A, "\n"
+    call print_char
+    jump main
+  load A, ERRORSTRING
+  call print_string
   loadi A, "\n"
   call print_char
   jump main
