@@ -27,6 +27,7 @@ init:
   loadi A, "."
   call print_char
   loadi A, "1"
+  jump main
   
 ERRORSTRING:      data "ERROR: COMMAND, PROGRAM, OR FILE NOT FOUND"
 
