@@ -64,5 +64,5 @@ shell_init:
   call print char
   xor A,A
   %include A:/bin/shell.asm
-  call main
+  call init
   
