@@ -1,4 +1,22 @@
-;VSBoot by DiamondCoder1000
-;store this in ROM, not Flash
+print_string:
+  push B
+  
+  repeat:
+    copy B, A
+    comp A, B
+    jmpif done, E
+    
+    call print_char
+    jump repeat
+  done:
+    xor A, A
+    pop B
+    ret
 
-ssdr $0000, $0000 ;SSD read block 0 to address 0, overwriting this instruction
+loadi A, "Booting CrylonOS..."
+call print_string
+
+xor A, A
+loadi A, 5
+outa A
+;unfinished
