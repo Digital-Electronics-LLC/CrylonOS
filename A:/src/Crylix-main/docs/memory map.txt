@@ -13,10 +13,10 @@ Flash ROM(8 Megawords)
 Note: the FLash ROM is divided into 2048 4 kiloword large "blocks" by vsfs
 the Flash ROM is divided into directories A: and B:, which are both 4 Megawords in size
 
-A:\
+A:\ - 1024 blocks
 0x600001 - 0x800000: where the OS is stored
 0x800001 - 0x900000: system programs
 0x900001 - 0xa00000: extra data(users, metadata, etc.)
 
-B:\
+B:\ - 1024 blocks
 0xa00001 - 0xffffff: your files
