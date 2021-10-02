@@ -3,6 +3,12 @@
 ;each block is 4096 bytes 
 ;512 blocks accessible
 
-malloc:
-  ;unfinished
-  ret
+%include A:/src/Crylix-main/kernel/sys_calls/print.asm
+
+malloc_init:
+  loadi A, "initializing malloc..."
+  call print
+  jump main
+
+main:
+  
