@@ -28,6 +28,7 @@
 
 
 %include A:/src/Crylix-main/kernel/malloc.asm
+call malloc_init
   
   
 ;|-------------------|
