@@ -25,7 +25,7 @@ data            data           0x000017      the address this instruction is in 
 outa            reg            0x000018      outputs the device address from the register [reg]
 ind             reg, reg       0x000019      inputs data from device address in [reg] to register [reg]
 outd            addr, reg      0x00001a      outputs data to device address in [reg] from register [reg]
-unused          blck, addr     0x00001b      unused
-unused          blck, addr     0x00001c      unused
+unused          N/A            0x00001b      unused
+unused          N/A            0x00001c      unused
 nop             N/A            0x00001d      no operation
 lodsb           reg            0x00001e      load single byte into register [reg]
