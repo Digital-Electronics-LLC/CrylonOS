@@ -11,4 +11,7 @@ malloc_init:
   jump main
 
 main:
+  nop
   
+  malloc:
+    ;unfinished
