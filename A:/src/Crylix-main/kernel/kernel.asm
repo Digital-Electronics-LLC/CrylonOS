@@ -18,7 +18,7 @@
 %include A:/src/Crylix-main/kernel/sys_calls/print_hex.asm
 %include A:/src/Crylix-main/kernel/sys_calls/readSSD.asm
 %include A:/src/Crylix-main/kernel/sys_calls/writeSSD.asm
-%include A:/src/Crylix-main/kernel/sys_calls/print_string.asm; yesssssssss finally!!!
+%include A:/src/Crylix-main/kernel/sys_calls/print.asm; yesssssssss finally!!!
 
 ;|--------------------------|
 ;|                          |
