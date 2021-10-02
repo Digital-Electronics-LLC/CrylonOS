@@ -19,4 +19,7 @@ call print_string
 xor A, A
 loadi A, 5
 outa A
+loadi A, 0
+outd A
+
 ;unfinished
