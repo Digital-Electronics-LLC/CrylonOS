@@ -12,6 +12,5 @@ malloc_init:
 
 main:
   nop
-  
   malloc:
     ;unfinished
