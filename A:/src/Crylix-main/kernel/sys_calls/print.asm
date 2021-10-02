@@ -1,4 +1,4 @@
-print_string:
+print:
   push B
   
   repeat:
