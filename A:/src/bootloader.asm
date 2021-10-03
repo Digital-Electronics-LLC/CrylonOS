@@ -26,7 +26,8 @@ outd A
 xor A, A
 xor B, B
 
-
+loadi A, "Welcome"
+call print_string
 
 times 4096-($-$$) data 0
 data 0x55aa
