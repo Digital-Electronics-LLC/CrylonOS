@@ -4,3 +4,4 @@
 
 error_check:
   call print; that's literally it
+  basically, you put the error message in A
