@@ -19,11 +19,14 @@ call print_string
 xor A, A
 loadi A, 5
 outa A
-loadi A, 0
+loadi A, 1
 outd A
+loadi A, 0
 outd A
 xor A, A
 xor B, B
+
+
 
 times 4096-($-$$) data 0
 data 0x55aa
