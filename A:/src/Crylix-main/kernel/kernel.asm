@@ -2,6 +2,16 @@
 ;basically, the OS
 ;store in SSD at block 0
 
+
+;-----------------------------------------------------------------|
+;|                                                                |
+;|                                                                |
+;|                            INIT                                |
+;|                                                                |
+;|                                                                |
+;|                                                                |
+;-----------------------------------------------------------------
+      ;The Kernel init code is down there  ↓↓↓↓↓
 ;-------------------------------------------------------------------
 ;|                                                                 |
 ;|                         System Calls                            |
@@ -37,11 +47,13 @@ call malloc_init
 
 
 %include A:/src/Crylix-main/kernel/vsfs/vsfs.asm
-
+call
 
 ;|--------------------|
 ;|        Code        |
 ;|--------------------|
+
+; this{
 
 ;strings
 kernel_string:      data "Crylix Kernel 0.12", 0
@@ -49,6 +61,8 @@ shell_init_string:      data "initializing shell...", 0
 
 load A, kernel_string
 call print_string
+
+;} is still part of init(kinda ☺)
 
 ;testing memory
 loadi A, 10
