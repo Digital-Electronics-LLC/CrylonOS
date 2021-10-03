@@ -8,19 +8,7 @@ fs_init:
   jump main
   
 main:
-  
-createFile:
-  ;unfinished
-  ret
-
-deleteFile:
-  ;unfinished
-  ret
-  
-readFile:
-  ;unfinished
-  ret
-  
-writeFile:
-  ;you guessed it, unfinished
-  ret
+  %include A:/src/Crylix-main/kernel/vsfs/deleteFile.asm
+  %include A:/src/Crylix-main/kernel/vsfs/createFile.asm
+  %include A:/src/Crylix-main/kernel/vsfs/readFile.asm
+  %include A:/src/Crylix-main/kernel/vsfs/writeFile.asm
