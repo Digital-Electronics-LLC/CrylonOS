@@ -2,7 +2,7 @@
 
 %include A:/bin/e/exit.asm
 %include A:/bin/d/ls.asm
-%include A:/bin/h/h.asm
+%include A:/bin/h/help.asm
 %include A:/bin/o/o.asm
 %include A:/src/Crylix-main/kernel/sys_calls/print_char.asm
 %include A:/src/Crylix-main/kernel/sys_calls/input_char.asm
