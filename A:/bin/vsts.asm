@@ -1,6 +1,6 @@
 ;VSTS(very simple text shell) by DiamondCoder1000
 
-%include A:/bin/e/e.asm
+%include A:/bin/e/exit.asm
 %include A:/bin/d/d.asm
 %include A:/bin/h/h.asm
 %include A:/bin/o/o.asm
