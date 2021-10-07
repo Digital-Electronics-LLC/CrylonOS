@@ -1,7 +1,7 @@
 ;VSTS(very simple text shell) by DiamondCoder1000
 
 %include A:/bin/e/exit.asm
-%include A:/bin/d/d.asm
+%include A:/bin/d/ls.asm
 %include A:/bin/h/h.asm
 %include A:/bin/o/o.asm
 %include A:/src/Crylix-main/kernel/sys_calls/print_char.asm
