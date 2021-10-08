@@ -50,12 +50,13 @@ main:
   jmpif command_h, E
   xor B, B
   
-  command_e: 
-    call e
+  command_exit: 
+    call exit
     jump NoError
-  command_h: 
-    call h
+  command_help: 
+    call help
     jump NoError
+  
   NoError:
     loadi A, "\n"
     call print_char
