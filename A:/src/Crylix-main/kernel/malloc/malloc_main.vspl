@@ -1,3 +1,10 @@
+//malloc_main.vspl by DiamondCoder1000
+
+//the first vspl file!
+//whoop whoop
+//vspl is basically a higher level assembly language
+//kinda
+//anyway...
 #include "A:/src/Crylix-main/kernel/sys_calls/print.asm"
 
 save(A, "malloc initialization finished");
