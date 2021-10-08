@@ -42,7 +42,7 @@ main:
   jmpif command_e, E
   xor B, B
   ;the "H" command
-  loadi B, "h"
+  loadi B, "help"
   comp A, B
   jmpif command_h, E
   xor B, B
