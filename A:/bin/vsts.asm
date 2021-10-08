@@ -58,6 +58,11 @@ main:
   comp A, B
   jumpif command_ver, E
   
+  ;the "about" command
+  loadi B, "about"
+  comp A, B
+  jumpif command_about, E
+  
   command_exit: 
     call exit
     jump NoError
