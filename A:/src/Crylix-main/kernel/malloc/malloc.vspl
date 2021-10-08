@@ -1,1 +1,11 @@
-#include "malloc.asm"
+#include "A:/src/Crylix-main/kernel/sys_calls/print.asm"
+
+save(A, "malloc initialization finished");
+print();
+xor(A, A);
+
+function main()
+{
+  nop();
+  
+}
