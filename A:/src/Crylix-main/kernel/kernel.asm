@@ -47,7 +47,7 @@ call malloc_init
 
 
 %include A:/src/Crylix-main/kernel/vsfs/vsfs.asm
-call init
+call fs_init
 
 ;|--------------------|
 ;|        Code        |
