@@ -37,7 +37,7 @@ main:
   xor A, A
   call input_char
   ;the "E" command
-  loadi B, "e"
+  loadi B, "exit"
   comp A, B
   jmpif command_e, E
   xor B, B
