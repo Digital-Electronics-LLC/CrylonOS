@@ -49,6 +49,12 @@ call malloc_init
 %include A:/src/Crylix-main/kernel/vsfs/vsfs.asm
 call fs_init
 
+;|------------------|
+;|       DEBUG      |
+;|------------------|
+
+%include A:/src/Crylix-main/kernel/debug.vspl
+
 ;|--------------------|
 ;|        Code        |
 ;|--------------------|
