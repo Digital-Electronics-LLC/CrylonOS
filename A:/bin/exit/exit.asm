@@ -1,3 +1,3 @@
 ;the "e" command
-e:
+exit:
   halt
