@@ -1,3 +1,5 @@
+%include A:/src/Crylix-main/kernel/sys_calls/print_char.asm
+
 hello:
   loadi A, "h"
   call print_char
