@@ -1,15 +1,21 @@
 //malloc_main.vspl by DiamondCoder1000
 
+//location of block allocated stored in X
+//each block is 4096 bytes 
+//512 blocks accessible
+
 //the first vspl file!
 //whoop whoop
 //vspl is basically a higher level assembly language
 //kinda
 //anyway...
+
+//te code
 #include "A:/src/Crylix-main/kernel/sys_calls/print.asm"
 
-save(A, "malloc initialization finished");
-print();
-xor(A, A);
+save(A, "malloc initialization finished"); //the save keyword saves a certain value into a register
+print(); //the "print function defined in "A:/src/Crylix-main/kernel/sys_calls/print.asm"
+xor(A, A); //clears A register
 
 function main()
 {
