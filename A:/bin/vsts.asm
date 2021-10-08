@@ -47,9 +47,12 @@ main:
   ;the "help" command
   loadi B, "help"
   comp A, B
-  jmpif command_h, E
+  jmpif command_help, E
   xor B, B
   ;the "ver" command
+  loadi B, "ver"
+  comp A, B
+  jumpif command_ver
   command_exit: 
     call exit
     jump NoError
