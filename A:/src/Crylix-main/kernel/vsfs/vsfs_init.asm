@@ -5,5 +5,5 @@
 fs_init:
   loadi A, "Mounting filesystem..."
   call print
-  jump main
+  call main
   
