@@ -7,6 +7,7 @@ version:      data "0.1-alpha18"
 %include A:/bin/help/help.asm
 %include A:/bin/open/open.asm
 %include A:/bin/ver/ver.asm
+%include A:/bin/about/about.asm
 %include A:/src/Crylix-main/kernel/sys_calls/print_char.asm
 %include A:/src/Crylix-main/kernel/sys_calls/input_char.asm
 %include A:/src/Crylix-main/kernel/sys_calls/print_string.asm
@@ -55,7 +56,7 @@ main:
   ;the "ver" command
   loadi B, "ver"
   comp A, B
-  jumpif command_ver
+  jumpif command_ver, E
   
   command_exit: 
     call exit
@@ -65,6 +66,9 @@ main:
     jump NoError
   command_ver:
     call ver
+    jump NoError
+  command_about:
+    call about
     jump NoError
   NoError:
     loadi A, "\n"
