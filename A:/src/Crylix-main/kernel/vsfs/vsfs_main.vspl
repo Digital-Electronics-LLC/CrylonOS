@@ -1,0 +1,9 @@
+//vsfs_main.vspl by DiamondCoder1000
+
+function main()
+{
+  #include "A:/src/Crylix-main/kernel/vsfs/deleteFile.asm"
+  #include "A:/src/Crylix-main/kernel/vsfs/createFile.asm"
+  #include "A:/src/Crylix-main/kernel/vsfs/readFile.asm"
+  #include "A:/src/Crylix-main/kernel/vsfs/writeFile.asm"
+}
