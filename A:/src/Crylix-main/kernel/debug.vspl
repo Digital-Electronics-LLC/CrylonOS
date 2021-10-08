@@ -1,7 +1,9 @@
-;debug.asm
-;made by DiamondCoder1000
-%include A:/src/Crylix-main/kernel/sys_calls/print.asm
+//debug.vspl
+//made by DiamondCoder1000
+
+#include "A:/src/Crylix-main/kernel/sys_calls/print.asm"
 
 error_check:
-  call print; that's literally it
-  ;basically, you put the error message in A
+  print();
+  //basically the error is written into A register
+  //the, error_check prints it out
