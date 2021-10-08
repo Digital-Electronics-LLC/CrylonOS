@@ -39,20 +39,24 @@ main:
   call print_char
   xor A, A
   call input_char
+  
   ;the "exit" command
   loadi B, "exit"
   comp A, B
-  jmpif command_e, E
+  jmpif command_exit, E
   xor B, B
+  
   ;the "help" command
   loadi B, "help"
   comp A, B
   jmpif command_help, E
   xor B, B
+  
   ;the "ver" command
   loadi B, "ver"
   comp A, B
   jumpif command_ver
+  
   command_exit: 
     call exit
     jump NoError
