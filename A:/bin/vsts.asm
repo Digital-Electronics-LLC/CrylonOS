@@ -39,7 +39,7 @@ main:
   call print_char
   xor A, A
   call input_char
-  ;the "E" command
+  ;the "exit" command
   loadi B, "exit"
   comp A, B
   jmpif command_e, E
@@ -49,7 +49,7 @@ main:
   comp A, B
   jmpif command_h, E
   xor B, B
-  
+  ;the "ver" command
   command_exit: 
     call exit
     jump NoError
