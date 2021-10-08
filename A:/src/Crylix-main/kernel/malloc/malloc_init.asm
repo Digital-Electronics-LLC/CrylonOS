@@ -4,7 +4,7 @@
 ;512 blocks accessible
 
 %include A:/src/Crylix-main/kernel/sys_calls/print.asm
-%include A:/src/Crylix-main/kernel/malloc/malloc.vspl
+%include A:/src/Crylix-main/kernel/malloc/malloc_main.vspl
 
 malloc_init:
   loadi A, "initializing malloc..."
