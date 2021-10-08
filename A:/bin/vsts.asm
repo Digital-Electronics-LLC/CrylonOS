@@ -44,7 +44,7 @@ main:
   comp A, B
   jmpif command_e, E
   xor B, B
-  ;the "H" command
+  ;the "help" command
   loadi B, "help"
   comp A, B
   jmpif command_h, E
@@ -56,7 +56,9 @@ main:
   command_help: 
     call help
     jump NoError
-  
+  command_ver:
+    call ver
+    jump NoError
   NoError:
     loadi A, "\n"
     call print_char
