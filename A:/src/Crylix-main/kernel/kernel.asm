@@ -37,7 +37,7 @@
 ;|--------------------------|
 
 
-%include A:/src/Crylix-main/kernel/malloc.asm
+%include A:/src/Crylix-main/kernel/malloc/malloc_init.asm
 call malloc_init
   
   
@@ -47,7 +47,7 @@ call malloc_init
 
 
 %include A:/src/Crylix-main/kernel/vsfs/vsfs.asm
-call
+call init
 
 ;|--------------------|
 ;|        Code        |
