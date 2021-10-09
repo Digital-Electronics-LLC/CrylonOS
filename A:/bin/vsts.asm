@@ -1,6 +1,6 @@
 ;VSTS(very simple text shell) by DiamondCoder1000
 
-version:      data "0.1-alpha19"
+version:      data "0.1-alpha20"
 
 %include A:/bin/user/user.asm
 %include A:/bin/exit/exit.asm
