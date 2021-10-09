@@ -2,6 +2,7 @@
 
 version:      data "0.1-alpha19"
 
+%include A:/bin/user/user.asm
 %include A:/bin/exit/exit.asm
 %include A:/bin/ls/ls.asm
 %include A:/bin/help/help.asm
