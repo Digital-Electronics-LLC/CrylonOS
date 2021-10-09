@@ -13,7 +13,7 @@
 //te code
 #include "A:/src/Crylix-main/kernel/sys_calls/print.asm"
 
-save(A, "malloc initialization finished"); //the save keyword saves a certain value into a register
+savei(A, "malloc initialization finished"); //the savei keyword saves a certain value into a register
 print(); //the "print function defined in "A:/src/Crylix-main/kernel/sys_calls/print.asm"
 xor(A, A); //clears A register
 
