@@ -1,1 +1,4 @@
-Exit - exits the system
+exit - exits the system
+ls - lists the directories
+cd - change directory
+ver - prints the cureent version
