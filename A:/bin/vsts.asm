@@ -31,13 +31,13 @@ init:
   call print_char
   loadi A, "."
   call print_char
-  loadi A, "1"
+  loadi A, "8"
   jump main
   
 ERRORSTRING:      data "ERROR: COMMAND, PROGRAM, OR FILE NOT FOUND"
 
 main:
-  loadi A, ">"
+  loadi A, "shell>"
   call print_char
   xor A, A
   call input_char
@@ -64,6 +64,11 @@ main:
   comp A, B
   jumpif command_about, E
   
+  ;the "user" command
+  loadi B, "user"
+  comp A, B
+  jumpif command_about, E
+  
   command_exit: 
     call exit
     jump NoError
@@ -83,6 +88,8 @@ main:
     loadi A, "\n"
     call print_char
     jump main
+  
+  ;if there is an error
   load A, ERRORSTRING
   call print_string
   loadi A, "\n"
