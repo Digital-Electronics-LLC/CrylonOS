@@ -76,6 +76,9 @@ main:
   command_about:
     call about
     jump NoError
+  command_user:
+    call user
+    jump NoError
   NoError:
     loadi A, "\n"
     call print_char
