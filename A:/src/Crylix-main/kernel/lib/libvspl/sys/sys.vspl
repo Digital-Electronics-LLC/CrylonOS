@@ -1,0 +1,10 @@
+//the sys library for the offical vspl language library
+function halt()
+{
+  int e = 5
+  while (e)
+  {
+    nop();
+  }
+}
+
