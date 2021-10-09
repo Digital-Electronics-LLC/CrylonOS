@@ -10,7 +10,7 @@
 //kinda
 //anyway...
 
-//te code
+//the code
 #include "A:/src/Crylix-main/kernel/sys_calls/print.asm"
 
 savei(A, "malloc initialization finished"); //the savei keyword saves a certain value into a register
@@ -19,6 +19,9 @@ xor(A, A); //clears A register
 
 function main()
 {
-  nop();
+  function alloc()
+  {
+    nop();
+  }
   
 }
