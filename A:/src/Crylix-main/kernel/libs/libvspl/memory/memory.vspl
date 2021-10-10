@@ -1,1 +1,14 @@
 //the memory library of the official vspl library
+function peek(int address)
+{
+  save(A, address[address]);
+  return(A);
+  xor(A, A);
+}
+
+function poke(int address, int value)
+{
+  savei(A, value);
+  store(A, address);
+  xor(A, A);
+}
