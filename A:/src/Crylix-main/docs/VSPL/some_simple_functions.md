@@ -23,3 +23,12 @@ xor(reg1, reg2); // logical xor
 and(reg1, reg2); // logical and
 or(reg1, reg2); // logical or
 ```
+## lodsb();
+
+lodsb(); is kinda complex to explain. Just google, lodsb.
+
+## inc(); dec();
+
+syntax: int(reg); dec(reg);
+increases or decreases the register "reg" by 1, respectivly.
+
