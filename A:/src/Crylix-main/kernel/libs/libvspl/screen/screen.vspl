@@ -1,4 +1,4 @@
-;screen library of the official vspl library
+//screen library of the official vspl library
 #include "A:/src/Crylix-main/kernel/sys_calls/print_char.asm"
 
 function print(string x)
