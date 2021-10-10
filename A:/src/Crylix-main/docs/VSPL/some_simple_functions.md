@@ -14,3 +14,8 @@ The savei(); function's syntax is written like this: `savei(reg, data)`. This st
 The store(); function is basically the save(); function but reversed. The syntax is written like: `store(A, address);`. If you typed `store(X, 4000);` and X had the number 12 stored in it, the RAM address 4000 would equal 12. I hope that makes sense lol.
 
 ## add(); sub(); xor(); and(); or();
+
+They do what they say. Syntax for all of them:
+add(reg1, reg2); - adds contents in reg1 to reg2. Stores answer in reg2.
+sub(reg1, reg2); - subtracts contents in reg1 to reg2. Stores answer in reg2.
+######unfinished
