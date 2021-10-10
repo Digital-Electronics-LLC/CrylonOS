@@ -16,8 +16,10 @@ The store(); function is basically the save(); function but reversed. The syntax
 ## add(); sub(); xor(); and(); or();
 
 They do what they say. Syntax for all of them:
-add(reg1, reg2); - adds contents in reg1 to reg2. Stores answer in reg2.
-sub(reg1, reg2); - subtracts contents in reg1 to reg2. Stores answer in reg2.
-xor(reg1, reg2); - logical xor
-and(reg1, reg2); - logical and
-or(reg1, reg2); - logical or
+```
+add(reg1, reg2); // adds contents in reg1 to reg2. Stores answer in reg2.
+sub(reg1, reg2); // subtracts contents in reg1 to reg2. Stores answer in reg2.
+xor(reg1, reg2); // logical xor
+and(reg1, reg2); // logical and
+or(reg1, reg2); // logical or
+```
