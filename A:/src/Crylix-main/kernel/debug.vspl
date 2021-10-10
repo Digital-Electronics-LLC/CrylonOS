@@ -3,9 +3,15 @@
 
 #include "A:/src/Crylix-main/kernel/sys_calls/print.asm"
 
-function erroR()
+function error()
 {
   print();
   //basically the error is written into A register
-  //the, error_check prints it out
+  //the, error() prints it out
+  //AND halts the system
+  int x = 5;
+  while(x)
+  {
+    nop();
+  }
 }
