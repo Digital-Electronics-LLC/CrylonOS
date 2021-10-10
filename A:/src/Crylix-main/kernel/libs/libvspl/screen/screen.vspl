@@ -1,0 +1,24 @@
+;screen library of the official vspl library
+#include "A:/src/Crylix-main/kernel/sys_calls/print_char.asm"
+
+function print(string x)
+{
+  function repeat()
+  {
+    lodsb();
+    xor(B, B);
+    if (A = B)
+    {
+      jump(end);
+    }
+  
+    print_char();
+    jump(repeat);
+    
+  }
+  function end()
+  {
+    nop();
+  }
+}
+
