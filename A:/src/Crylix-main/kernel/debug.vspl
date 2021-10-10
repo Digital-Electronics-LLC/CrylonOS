@@ -3,7 +3,7 @@
 
 #include "A:/src/Crylix-main/kernel/sys_calls/print.asm"
 
-function error_check()
+function erroR()
 {
   print();
   //basically the error is written into A register
