@@ -15,8 +15,8 @@ jump            addr           0x00000d      jump to the address [addr]
 jmpif           addr,CAEZ      0x00000e      jump to the address if the flag [CAEZ] is set
 inc             reg            0x00000f      increase the register [reg] by 1
 dec             reg            0x000010      decrease the register [reg] by 1
-pushr           reg            0x000011      push the data contained in the register [reg] into stack
-popr            reg            0x000012      pop the data from stack into the register [reg]
+push            reg            0x000011      push the data contained in the register [reg] into stack
+pop             reg            0x000012      pop the data from stack into the register [reg]
 call            func           0x000013      call the subroutine [func]
 ret             N/A            0x000014      return from subroutine
 clf             N/A            0x000015      clear all flags(CAEZ)
