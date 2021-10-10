@@ -11,4 +11,6 @@ The savei(); function's syntax is written like this: `savei(reg, data)`. This st
 
 ## store();
 
-The store(); function is basically the save(); function but reversed.
+The store(); function is basically the save(); function but reversed. The syntax is written like: `store(A, address);`. If you typed `store(X, 4000);` and X had the number 12 stored in it, the RAM address 4000 would equal 12. I hope that makes sense lol.
+
+## add(); sub(); xor(); and(); or();
