@@ -4,7 +4,7 @@ Jack Language from nand2tetris and assembly. About 50% of CrylonOS is gonna be c
 
 #### VSPL Sample
 
-`
+```
 //debug.vspl
 //made by DiamondCoder1000
 
@@ -23,4 +23,4 @@ function error()
     nop();
   }
 }
-`
+```
