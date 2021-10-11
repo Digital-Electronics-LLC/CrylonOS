@@ -1,1 +1,8 @@
 //array of the vspl library
+
+#include "A:/src/Crylix-main/kernel/libs/libvspl/memory/memory.vspl"
+
+function array(int size)
+{
+  alloc(size);
+}
