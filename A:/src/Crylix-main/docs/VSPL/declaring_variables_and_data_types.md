@@ -11,7 +11,7 @@ the "int" data type(nums 0 - 16777215) : `int foo = 10;`
 
 the" signed int" data type(nums -8388607 - 8388608): `signed int foo = -10;`
 
-the "string" data type: `string foo = "hello, world!;"`
+the "string" data type: `string foo = "hello, world!";`
 
 the "char" data type(chars are numbers that cannot excede 255. IDK why i added this): `char foo = 255;`
 
