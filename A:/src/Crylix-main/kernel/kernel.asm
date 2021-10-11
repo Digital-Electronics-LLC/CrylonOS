@@ -83,3 +83,4 @@ shell_init:
   %include A:/bin/shell.asm
   call init
   
+;end
