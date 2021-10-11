@@ -1,4 +1,13 @@
 //the memory library of the official vspl library
+
+/* some vars */
+
+//for malloc
+int blocks = 32768;
+int block_size = 64;
+
+
+
 function peek(int address)
 {
   save(A, address[address]);
@@ -16,6 +25,6 @@ function poke(int address, int value)
 
 function alloc(size)
 {
-
+  nop();
 }
 
