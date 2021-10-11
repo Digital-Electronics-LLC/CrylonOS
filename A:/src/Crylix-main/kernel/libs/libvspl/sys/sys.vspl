@@ -1,11 +1,18 @@
 //the sys library for the offical vspl language library
 function stop()
 {
-  int e = 5
+  int e = 5;
   while (e)
   {
     nop();
   }
 }
 
-
+function wait(int duration)
+{
+  while (duration > 0)
+  {
+    nop();
+    duration = duration - 1;
+  }
+}
