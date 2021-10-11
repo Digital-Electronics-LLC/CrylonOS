@@ -10,9 +10,5 @@ function error()
   //basically the error is written into A register
   //the, error() prints it out
   //AND halts the system
-  int x = 5;
-  while(x)
-  {
-    nop();
-  }
+  stop();
 }
