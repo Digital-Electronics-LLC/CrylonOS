@@ -37,8 +37,7 @@
 ;+--------------------------+
 
 
-%include A:/src/Crylix-main/kernel/malloc/malloc_init.asm
-call malloc_init
+;no more malloc, its completely in VSPL
   
   
 ;+-------------------+
