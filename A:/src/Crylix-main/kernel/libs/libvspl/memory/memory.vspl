@@ -6,8 +6,6 @@
 int blocks = 32768;
 int block_size = 64;
 
-
-
 function peek(int address)
 {
   save(A, address[address]);
