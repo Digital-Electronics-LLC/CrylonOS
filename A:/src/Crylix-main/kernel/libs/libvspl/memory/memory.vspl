@@ -6,6 +6,8 @@
 int blocks = 32768;
 int block_size = 64;
 
+int freelist = blocks;
+
 function peek(int address)
 {
   save(A, address[address]);
@@ -23,6 +25,8 @@ function poke(int address, int value)
 
 function alloc(size)
 {
-  nop();
+  int block = freelist;
+  let freeList = freeList + size;
+  return(block);
 }
 
