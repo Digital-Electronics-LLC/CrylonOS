@@ -8,6 +8,7 @@ int block_size = 64;
 
 int freelist = blocks;
 
+//gonna change some things
 function peek(int address)
 {
   save(A, address[address]);
