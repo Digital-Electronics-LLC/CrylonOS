@@ -1,15 +1,17 @@
 //vsfs_main.vspl by DiamondCoder1000
 
+#include "A:/src/Crylix-main/kernel/vsfs/deleteFile.asm"
+#include "A:/src/Crylix-main/kernel/vsfs/createFile.asm"
+#include "A:/src/Crylix-main/kernel/vsfs/readFile.asm"
+#include "A:/src/Crylix-main/kernel/vsfs/writeFile.asm"
+
 function main()
 {
-  define string_thing = "File System Mounted";
-  define string2 = "A:/src/Crylix-main/kernel/vsfs/vsfs_main.vspl"
+  string string_thing = "File System Mounted";
+  string string2 = "A:/src/Crylix-main/kernel/vsfs/vsfs_main.vspl"
   int ssd_size = "8 megawords"
   
-  #include "A:/src/Crylix-main/kernel/vsfs/deleteFile.asm"
-  #include "A:/src/Crylix-main/kernel/vsfs/createFile.asm"
-  #include "A:/src/Crylix-main/kernel/vsfs/readFile.asm"
-  #include "A:/src/Crylix-main/kernel/vsfs/writeFile.asm"
+  
   
   save(A, string_thing);
   print();
