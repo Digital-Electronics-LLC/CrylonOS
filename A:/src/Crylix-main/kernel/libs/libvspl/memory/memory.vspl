@@ -3,10 +3,16 @@
 /* some vars */
 
 //for malloc
-int blocks = 32768;
-int block_size = 64;
+int blocks = 32765;
 
-int freelist = blocks;
+int freelist = array(blocks);
+int usedlist = array(blocks);
+int pointer = blocks;
+
+for (int i = freelist[0]; i = i + 1; i = blocks;)
+{
+  freelist[i] = i; //very weird syntax, i know
+}
 
 //gonna change some things
 function peek(int address)
@@ -26,8 +32,10 @@ function poke(int address, int value)
 
 function alloc(size)
 {
-  int block = freelist;
+  /*
+  let block = freeList;
   let freeList = freeList + size;
-  return(block);
+  return block;
+  */
 }
 
