@@ -50,7 +50,7 @@ function main()
   comp A, B
   jumpif command_about, E
   
-  ;the "user" command
+  //the "user" command
   loadi B, "user"
   comp A, B
   jumpif command_about, E
