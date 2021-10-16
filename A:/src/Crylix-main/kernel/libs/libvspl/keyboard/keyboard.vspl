@@ -1,1 +1,12 @@
 //the keyboard library of the official vspl library
+
+;input_char interrupt by DiamondCoder1000
+;loads char into A
+function input_char()
+{
+  xor(A, A); 
+  loadi(B, 1);
+  ind(B, A);
+  xor (B, B);
+  outa(B);
+}
