@@ -45,7 +45,7 @@ function main()
   comp(A, B);
   jumpif(command_ver, E);
   
-  ;the "about" command
+  //the "about" command
   loadi B, "about"
   comp A, B
   jumpif command_about, E
