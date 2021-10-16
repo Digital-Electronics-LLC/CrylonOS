@@ -22,3 +22,7 @@ function print(string x)
   }
 }
 
+function println()
+{
+  print("\n");
+}
