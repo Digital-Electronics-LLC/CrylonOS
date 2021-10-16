@@ -1,6 +1,6 @@
 ;VSTS(very simple text shell) by DiamondCoder1000
 
-version:      data "0.1-alpha23"
+string thingy = "shell version 0.27"
 
 %include A:/bin/user/user.asm
 %include A:/bin/exit/exit.asm
