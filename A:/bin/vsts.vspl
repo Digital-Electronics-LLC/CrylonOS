@@ -1,4 +1,4 @@
-;VSTS(very simple text shell) by DiamondCoder1000
+//VSTS(very simple text shell) by DiamondCoder1000
 
 string thingy = "shell version 0.27";
 
