@@ -46,23 +46,25 @@ function main()
   jumpif(command_ver, E);
   
   //the "about" command
-  loadi B, "about"
-  comp A, B
-  jumpif command_about, E
+  savei(B, "about");
+  comp(A, B);
+  jumpif(command_about, E);
   
   //the "user" command
-  loadi B, "user"
-  comp A, B
-  jumpif command_about, E
+  savei(B, "user");
+  comp(A, B);
+  jumpif(command_user, E);
   
   function command_exit()
   {
     call exit
     jump NoError
   }
-  command_help: 
+  function command_help()
+  {
     call help
     jump NoError
+  }
   command_ver:
     call ver
     jump NoError
