@@ -28,7 +28,7 @@ function main()
   print(prompt);
   input_string();
   
-  ;the "exit" command
+  //the "exit" command
   savei(B, "exit");
   comp(A, B);
   jmpif(command_exit, E)
