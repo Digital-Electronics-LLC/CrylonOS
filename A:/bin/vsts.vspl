@@ -44,7 +44,7 @@ function main()
   savei(B, "ver");
   comp(A, B);
   jumpif(command_ver, E);
-/*  
+  
   ;the "about" command
   loadi B, "about"
   comp A, B
@@ -81,8 +81,7 @@ function main()
   loadi A, "\n"
   call print_char
   jump main
-*/
-//im not finished asm to vspl translation
+
 }
 
   
