@@ -34,13 +34,13 @@ function main()
   jmpif(command_exit, E)
   xor(B, B)
   
-  ;the "help" command
+  //the "help" command
   savei(B, "help");
   comp(A, B);
   jmpif(command_help, E);
   xor(B, B);
   
-  ;the "ver" command
+  //the "ver" command
   savei(B, "ver");
   comp(A, B);
   jumpif(command_ver, E);
