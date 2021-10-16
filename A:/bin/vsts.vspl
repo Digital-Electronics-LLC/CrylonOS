@@ -57,13 +57,13 @@ function main()
   
   function command_exit()
   {
-    call exit
-    jump NoError
+    call(exit);
+    jump(NoError);
   }
   function command_help()
   {
-    call help
-    jump NoError
+    call(help);
+    jump(NoError);
   }
   command_ver:
     call ver
