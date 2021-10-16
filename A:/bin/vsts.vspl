@@ -65,12 +65,14 @@ function main()
     call(help);
     jump(NoError);
   }
-  command_ver:
-    call ver
-    jump NoError
+  function command_ver()
+  {
+    call(ver);
+    jump(NoError);
+  }
   command_about:
-    call about
-    jump NoError
+    call(about)
+    jump(NoError);
   command_user:
     call user
     jump NoError
