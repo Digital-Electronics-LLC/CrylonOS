@@ -70,23 +70,25 @@ function main()
     call(ver);
     jump(NoError);
   }
-  command_about:
-    call(about)
+  function command_about()
+  {
+    call(about);
     jump(NoError);
-  command_user:
-    call user
-    jump NoError
-  NoError:
-    loadi A, "\n"
-    call print_char
-    jump main
-  
-  ;if there is an error
-  load A, ERRORSTRING
-  call print_string
-  loadi A, "\n"
-  call print_char
-  jump main
+  }
+  function command_user()
+  {
+    call(user);
+    jump(NoError);
+  }
+  function NoError()
+  {
+    println();
+    jump(main);
+  }
+  //if there is an error
+  print(ERRORSTRING);
+  println();
+  jump(main);
 
 }
 
