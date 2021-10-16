@@ -55,9 +55,11 @@ function main()
   comp A, B
   jumpif command_about, E
   
-  command_exit: 
+  function command_exit()
+  {
     call exit
     jump NoError
+  }
   command_help: 
     call help
     jump NoError
