@@ -21,29 +21,30 @@ function init()
   jump(main);
 }
 string ERROR = "Error: command or file not found"
-string prompt = "
+string prompt = "shell>"
 
 function main()
 {
-  print("shell
+  print(prompt);
+  input_string();
   
   ;the "exit" command
-  loadi B, "exit"
-  comp A, B
-  jmpif command_exit, E
-  xor B, B
+  savei(B, "exit");
+  comp(A, B);
+  jmpif(command_exit, E)
+  xor(B, B)
   
   ;the "help" command
-  loadi B, "help"
-  comp A, B
-  jmpif command_help, E
-  xor B, B
+  savei(B, "help");
+  comp(A, B);
+  jmpif(command_help, E);
+  xor(B, B);
   
   ;the "ver" command
-  loadi B, "ver"
-  comp A, B
-  jumpif command_ver, E
-  
+  savei(B, "ver");
+  comp(A, B);
+  jumpif(command_ver, E);
+/*  
   ;the "about" command
   loadi B, "about"
   comp A, B
@@ -80,6 +81,8 @@ function main()
   loadi A, "\n"
   call print_char
   jump main
+*/
+//im not finished asm to vspl translation
 }
 
   
