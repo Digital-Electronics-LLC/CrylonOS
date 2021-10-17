@@ -1,6 +1,6 @@
 //VSTS(very simple text shell) by DiamondCoder1000
 
-string thingy = "shell version 0.27";
+string thingy = "0.1-alpha27";
 
 #include "A:/bin/user/user.asm"
 #include "A:/bin/exit/exit.asm"
@@ -20,76 +20,30 @@ function init()
   print(thingy);
   jump(main);
 }
-string ERROR = "Error: command or file not found"
-string prompt = "shell>"
+string ERROR = "Error: command or file not found";
+string prompt = "shell>";
+string x;
 
 function main()
 {
   print(prompt);
   input_string();
+  store(A, x);
   
-  //the "exit" command
-  savei(B, "exit");
-  comp(A, B);
-  jmpif(command_exit, E)
-  xor(B, B)
-  
-  //the "help" command
-  savei(B, "help");
-  comp(A, B);
-  jmpif(command_help, E);
-  xor(B, B);
-  
-  //the "ver" command
-  savei(B, "ver");
-  comp(A, B);
-  jumpif(command_ver, E);
-  
-  //the "about" command
-  savei(B, "about");
-  comp(A, B);
-  jumpif(command_about, E);
-  
-  //the "user" command
-  savei(B, "user");
-  comp(A, B);
-  jumpif(command_user, E);
-  
-  function command_exit()
-  {
-    call(exit);
-    jump(NoError);
+  if (x = "exit"){
+    exit();
   }
-  function command_help()
-  {
-    call(help);
-    jump(NoError);
+  else if(x = "user"){
+    user();
   }
-  function command_ver()
-  {
-    call(ver);
-    jump(NoError);
+  else if(x = "help"){
+    help();
   }
-  function command_about()
-  {
-    call(about);
-    jump(NoError);
+  else if(x = "ver"){
+    ver();
   }
-  function command_user()
-  {
-    call(user);
-    jump(NoError);
+  else {
+    print(ERROR);
   }
-  function NoError()
-  {
-    println();
-    jump(main);
-  }
-  //if there is an error
-  print(ERRORSTRING);
-  println();
-  jump(main);
-
-}
 
   
