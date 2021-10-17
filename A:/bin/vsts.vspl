@@ -32,15 +32,19 @@ function main()
   
   if (x = "exit"){
     exit();
+    println();
   }
   else if(x = "user"){
     user();
+    println();
   }
   else if(x = "help"){
     help();
+    println();
   }
   else if(x = "ver"){
     ver();
+    println();
   }
   else {
     print(ERROR);
