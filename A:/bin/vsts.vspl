@@ -30,19 +30,19 @@ function main()
   input_string();
   store(A, x);
   
-  if (x = "exit"){
+  if (x == "exit"){
     exit();
     println();
   }
-  else if(x = "user"){
+  else if(x == "user"){
     user();
     println();
   }
-  else if(x = "help"){
+  else if(x == "help"){
     help();
     println();
   }
-  else if(x = "ver"){
+  else if(x == "ver"){
     ver();
     println();
   }
