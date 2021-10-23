@@ -4,11 +4,8 @@
 #include "A:/src/Crylix-main/kernel/sys_calls/print.asm"
 #include "A:/src/Crylix-main/kernel/libs/libvspl/"
 
-function error()
+function error(int code)
 {
-  print();
-  //basically the error is written into A register
-  //the, error() prints it out
-  //AND halts the system
-  stop();
+  print("error: ", code);
 }
+
