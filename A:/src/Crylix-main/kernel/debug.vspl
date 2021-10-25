@@ -6,6 +6,6 @@
 
 function error(int code)
 {
-  print("error: ", code);
+  print("error: ", code); 
 }
 
