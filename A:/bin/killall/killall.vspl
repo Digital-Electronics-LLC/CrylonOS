@@ -1,0 +1,5 @@
+#include "A:/src/Crylix-main/kernel/libs/libvspl"
+
+function killall(){
+  freeAll();
+}
