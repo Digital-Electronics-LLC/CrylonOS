@@ -5,6 +5,7 @@ uint heapbase
 uint freelist = 65536;
 
 #include "A:/src/Crylix-main/kernel/debug.vspl"
+#include "A:/src/Crylix-main/kernel/libs/libvspl
 
 function peek(int address)
 {
@@ -21,7 +22,7 @@ function poke(uint address, uint value)
 }
 
 
-function alloc(uint size)
+function malloc(uint size)
 {
   if (size <== 0){
     error(NULL); //imma change this later
@@ -29,8 +30,22 @@ function alloc(uint size)
     //so, error(NULL); prints out nothing
   }
   
-  uint block = freeList;
+  if (freelist == 2162688){
+    print("not enough memory! Kill some processes to free memory. or use the 'killall' command to kill all processes");
+  }
+  
+  uint block = freelist;
   save(A, block);
-  freeList = freeList + size;
+  freeList = freelist + size;
   return;
+}
+
+function free(uint size)
+{
+  return;
+}
+
+function freeAll()
+{
+  freelist = 65536;
 }
