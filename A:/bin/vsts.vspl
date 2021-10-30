@@ -34,17 +34,20 @@ function main()
     exit();
     println();
   }
-  else if(x == "user"){
+  else if (x == "user"){
     user();
     println();
   }
-  else if(x == "help"){
+  else if (x == "help"){
     help();
     println();
   }
-  else if(x == "ver"){
+  else if (x == "ver"){
     ver();
     println();
+  }
+  else if(x == "killall"){
+    
   }
   else {
     print(ERROR);
