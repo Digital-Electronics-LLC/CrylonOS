@@ -1,6 +1,6 @@
 //VSTS(very simple text shell) by DiamondCoder1000
 
-string thingy = "0.1-alpha27";
+string thingy = "0.1-alpha32";
 
 #include "A:/bin/user/user.asm"
 #include "A:/bin/exit/exit.asm"
@@ -9,6 +9,7 @@ string thingy = "0.1-alpha27";
 #include "A:/bin/open/open.asm"
 #include "A:/bin/ver/ver.asm"
 #include "A:/bin/about/about.asm"
+#include "A:/bin/killall/killall.vspl"
 #include "A:/src/Crylix-main/kernel/libs/libvspl/"
 #include "A:/bin/apps/basic.asm"
 #include "A:/bin/apps/calculator.asm"
@@ -47,7 +48,7 @@ function main()
     println();
   }
   else if(x == "killall"){
-    
+    killall();
   }
   else {
     print(ERROR);
