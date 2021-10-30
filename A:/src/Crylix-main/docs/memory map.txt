@@ -1,9 +1,8 @@
 RAM(4 Megawords)
 
 0x000000 - 0x00ffff: kernel space
-0x001000 - 0x009000: malloc table
-0x009001 - 0x209001: heap
-0x209002 - 0x400000: free for variables
+0x010000 - 0x210000: heap
+0x210001 - 0x400000: free for variables
 
 stack, which is part of RAM(4 Megawords)
 
