@@ -47,8 +47,12 @@ function main()
     ver();
     println();
   }
-  else if(x == "killall"){
+  else if (x == "killall"){
     killall();
+  }
+  else if (x == "/apps/hello_test.asm"){
+    print("nothing yet!");
+    return;
   }
   else {
     print(ERROR);
