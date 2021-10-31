@@ -42,7 +42,7 @@ function malloc(uint size)
 
 function free(uint size)
 {
-  return;
+  freelist = freelist - size;
 }
 
 function freeAll()
