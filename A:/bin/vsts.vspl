@@ -11,10 +11,6 @@ string thingy = "0.1-alpha32";
 #include "A:/bin/about/about.asm"
 #include "A:/bin/killall/killall.vspl"
 #include "A:/src/Crylix-main/kernel/libs/libvspl/"
-#include "A:/bin/apps/basic.asm"
-#include "A:/bin/apps/calculator.asm"
-#include "A:/bin/apps/hello_test.asm"
-#include "A:/bin/apps/vste.asm"
 
 function init()
 {
