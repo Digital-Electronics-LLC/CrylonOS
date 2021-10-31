@@ -1,0 +1,19 @@
+//the disk portion of VSPL library
+
+function diskRead(int block, int address){
+  savei(B, 4);
+  outa(B);
+  outd(B, block);
+  outd(B, address);
+  xor(B, B);
+  outa(B);
+}
+
+function diskWrite(int address, int block){
+  savei(B, 5);
+  outa(B);
+  outd(B, address);
+  outd(B, block);
+  xor(B, B);
+  outa(B);
+}
