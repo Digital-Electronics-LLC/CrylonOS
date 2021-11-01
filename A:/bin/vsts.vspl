@@ -29,7 +29,6 @@ function main()
   
   if (x == "exit"){
     exit();
-    println();
   }
   else if (x == "user"){
     user();
