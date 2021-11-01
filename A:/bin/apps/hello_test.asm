@@ -1,5 +1,6 @@
 ;store at ssd block 0x300001
-message:      data "hello from CrylonOS!"
+hello_test:
+  message:      data "hello from CrylonOS!"
 
-load A, message
-call print_string
+  load A, message
+  call print_string
