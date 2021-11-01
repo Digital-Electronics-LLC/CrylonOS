@@ -47,8 +47,10 @@ function main()
     killall();
   }
   else if (x == "/apps/hello_test.asm"){
-    print("nothing yet!");
-    return;
+    malloc(16384);
+    diskRead($300001, A);
+    hello_test();
+    free(16384);
   }
   else {
     print(ERROR);
