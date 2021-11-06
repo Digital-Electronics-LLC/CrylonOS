@@ -22,3 +22,14 @@ function min(int a, int b)
     return(b)
   }
 }
+
+function mult(a, b)
+  uint x = 0;
+  add(a, x);
+  dec(b);
+  if (b == y){
+    return;
+  }
+  else{
+    jump(28);
+  }
