@@ -3,8 +3,15 @@
 #include "A:/src/Crylix-main/kernel/libs/libvspl/memory/memory.vspl"
 uint SCREEN_BASE = 4259841
 uint SCREEN_TOP = 4390913
+bool color = true;
 
 function clearScreen(){
   for (uint i = SCREEN_BASE; i <== SCREEN_TOP; i++)
     poke(i, 0);
+  return;
+}
+
+function setColor(bool b){
+  color = b;
+  return;
 }
