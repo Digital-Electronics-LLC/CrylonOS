@@ -32,10 +32,11 @@ function malloc(uint size)
   
   if (freelist == 4194304){
     print("not enough memory! Kill some processes to free memory. or use the 'killall' command to kill all processes");
+    return;
   }
   
-  uint block = freelist;
-  save(A, block);
+  uint pointer = freelist;
+  save(A, pointer);
   freeList = freelist + size;
   return;
 }
