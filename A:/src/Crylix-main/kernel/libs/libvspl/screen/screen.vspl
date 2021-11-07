@@ -1,1 +1,9 @@
+//this is the screen component of the VSPL standard library.
 
+uint SCREEN_BASE = 4259841
+uint SCREEN_TOP = 4390913
+
+function clearScreen(){
+  for (uint i = SCREEN_BASE; i <== SCREEN_TOP; i++)
+    poke(i, 0);
+}
