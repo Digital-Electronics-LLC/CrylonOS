@@ -30,7 +30,7 @@ function malloc(uint size)
     //so, error(NULL); prints out nothing
   }
   
-  if (freelist == 2162688){
+  if (freelist == 4194304){
     print("not enough memory! Kill some processes to free memory. or use the 'killall' command to kill all processes");
   }
   
