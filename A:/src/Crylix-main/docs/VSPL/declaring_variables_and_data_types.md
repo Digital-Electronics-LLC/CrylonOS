@@ -13,6 +13,8 @@ the" uint" data type(nums 0 - 16777215): `uint foo = 10;`
 
 the "string" data type: `string foo = "hello, world!";`
 
-the "int8" data type(nums -127 - 128): `char foo = 255;`
+the "int8" data type(nums -127 - 128): `int8 foo = -125;`
 
-the "uint8" data type(chars are numbers that cannot excede 255. IDK why i added this): `signed char foo = -125`
+the "uint8" data type(chars are numbers that cannot excede 255. IDK why i added this): `uint8 foo = 255`
+
+the "bool" data type(true or false): `bool foo = true`
