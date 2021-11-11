@@ -7,11 +7,25 @@
 	D => 0x3
 }
 
+#subruledef boolean
+{
+	left => 0x000000
+	right => 0x000001
+}
+
 #ruledef
 {
 	loadi {reg: registers}, {value} => 0x000002 @ value`16 @ reg`8
 	load {reg: registers}, {address} => 0x000001 @ address`24 @ reg`24
 	store {reg: registers}, {address} => 0x000003 @ address`24 @ reg`24
 	add {regA: registers}, {regB: registers} => 0x000004 @ regA`8 @ regB`8 @ 0x00
+	sub {regA: registers}, {regB: registers} => 0x000005 @ regA`8 @ regB`8 @ 0x00
+	comp {regA: registers}, {regB: registers} => 0x000006 @ regA`8 @ regB `8
+	and {regA: registers}, {regB: registers} => 0x000007 @ regA`8 @ regB `8
+	or {regA: registers}, {regB: registers} => 0x000008 @ regA`8 @ regB `8
+	xor {regA: registers}, {regB: registers} => 0x000009 @ regA`8 @ regB `8
+	shift {dirc: boolean}, {regB: registers} => 0x00000a @ dirc @ regB `24
+	copy {regA: registers}, {regB: registers} => 0x00000b @ regA`8 @ regB `8 @0x00
+	jmpr {regA: registers} => 0x00000c @ regA`24
 	nop => 0x00001d
 }
