@@ -3,14 +3,22 @@
 {
 	A => 0x0
 	B => 0x1
-	C => 0x2
-	D => 0x3
+	X => 0x2
+	Y => 0x3
 }
 
 #subruledef boolean
 {
 	left => 0x000000
 	right => 0x000001
+}
+#subruledef CAEZN
+{
+	C => 0x000000
+	E => 0x000001
+	A => 0x000002
+	Z => 0x000003
+	N => 0x000004
 }
 
 #ruledef
@@ -27,5 +35,7 @@
 	shift {dirc: boolean}, {regB: registers} => 0x00000a @ dirc @ regB `24
 	copy {regA: registers}, {regB: registers} => 0x00000b @ regA`8 @ regB `8 @0x00
 	jmpr {regA: registers} => 0x00000c @ regA`24
+	jump {address} => 0x00000d @ address`24
+	jmpif {address}, {condition: CAEZN} => 0x00000e @ address`24 @ condition
 	nop => 0x00001d
 }
