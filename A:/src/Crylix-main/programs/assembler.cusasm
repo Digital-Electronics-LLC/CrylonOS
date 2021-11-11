@@ -37,5 +37,18 @@
 	jmpr {regA: registers} => 0x00000c @ regA`24
 	jump {address} => 0x00000d @ address`24
 	jmpif {address}, {condition: CAEZN} => 0x00000e @ address`24 @ condition
+	inc {regA: registers} => 0x00000f @ regA`24
+	dec {regA: registers} => 0x000010 @ regA`24
+	push {regA: registers} => 0x000011 @ regA`24
+	pop {regA: registers} => 0x000012 @ regA`24
+	call {func} => 0x000013 @ func`24
+	ret => 0x000014
+	clf => 0x000015
+	halt => 0x000016
+	data {data} => data`256
+	outa {reg: registers} => 0x000018 @ reg`24
+	ind {addr: registers}, {regB: registers} => 0x00000b @ addr`8 @ regB `8 @0x00
+	outd {addr: registers}, {regB: registers} => 0x00000b @ addr`8 @ regB `8 @0x00
 	nop => 0x00001d
 }
+
