@@ -11,6 +11,7 @@ string thingy = "CrylonOS 0.1-alpha33";
 #include "A:/bin/about/about.asm"
 #include "A:/bin/killall/killall.vspl"
 #include "A:/src/Crylix-main/kernel/libs/libvspl/"
+#include "A:/sys/process.vspl"
 
 function init()
 {
@@ -46,10 +47,8 @@ function main()
     killall();
   }
   else if (x == "/apps/hello_test.asm"){
-    malloc(16384);
-    diskRead($300001, A);
-    hello_test();
-    free(16384);
+    exec($300001);
+    doneExec();
   }
   else {
     print(ERROR);
