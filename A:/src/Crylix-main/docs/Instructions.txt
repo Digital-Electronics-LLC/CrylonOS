@@ -28,4 +28,4 @@ outd            addr, reg      0x00001a      outputs data to device address in [
 unused          N/A            0x00001b      unused
 unused          N/A            0x00001c      unused
 nop             N/A            0x00001d      no operation
-lodsb           reg            0x00001e      load single byte into register [reg]
+lodsb           reg            0x00001e      load single byte from string into register [reg]
