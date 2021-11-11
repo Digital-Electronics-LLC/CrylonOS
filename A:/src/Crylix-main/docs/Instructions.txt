@@ -21,7 +21,7 @@ call            func           0x000013      call the subroutine [func]
 ret             N/A            0x000014      return from subroutine
 clf             N/A            0x000015      clear all flags(CAEZ)
 halt            N/A            0x000016      halt the clock, thus ending the program
-data            data           0x000017      the address this instruction is in contains the data [data]
+data            data           0x000017      the address this instruction is in contains the data [data]; hex code unused
 outa            reg            0x000018      outputs the device address from the register [reg]
 ind             reg, reg       0x000019      inputs data from device address in [reg] to register [reg]
 outd            addr, reg      0x00001a      outputs data to device address in [reg] from register [reg]
