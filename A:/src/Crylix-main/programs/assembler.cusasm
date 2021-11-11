@@ -1,3 +1,4 @@
+;https://hlorenzi.github.io/customasm/web/
 #subruledef registers
 {
 	A => 0x0
@@ -11,12 +12,6 @@
 	loadi {reg: registers}, {value} => 0x000002 @ value`16 @ reg`8
 	load {reg: registers}, {address} => 0x000001 @ address`24 @ reg`24
 	store {reg: registers}, {address} => 0x000003 @ address`24 @ reg`24
+	add {regA: registers}, {regB: registers} => 0x000004 @ regA`8 @ regB`8 @ 0x00
 	nop => 0x00001d
 }
-
-
-nop
-loadi B, 5
-load C, 15
-store C, 16
-store B, 2
