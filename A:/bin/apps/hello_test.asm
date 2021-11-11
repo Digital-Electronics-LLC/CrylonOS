@@ -5,3 +5,4 @@ hello_test:
 
   load A, message
   call print
+  ret
