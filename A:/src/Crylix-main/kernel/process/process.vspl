@@ -1,7 +1,12 @@
 #include "A:/sys/libvspl.vspl"
 
 function exec(int block){
-  alloc(16348);
+  malloc(16348);
   diskRead(block, A);
   jump(A);
+}
+
+function doneExec(){
+  free(16348);
+  print("program execution done");
 }
