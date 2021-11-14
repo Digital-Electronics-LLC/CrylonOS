@@ -1,6 +1,6 @@
 //VSTS(very simple text shell) by DiamondCoder1000
 
-string thingy = "CrylonOS 0.1-alpha33";
+string thingy = "CrylonOS 0.1-beta4";
 
 #include "A:/bin/user/user.asm"
 #include "A:/bin/exit/exit.asm"
@@ -49,6 +49,9 @@ function main()
   else if (x == "/apps/hello_test.asm"){
     exec($300001);
     doneExec();
+  }
+  else if(x == "/apps/calculator.vspl"){
+    print("WIP");
   }
   else {
     print(ERROR);
