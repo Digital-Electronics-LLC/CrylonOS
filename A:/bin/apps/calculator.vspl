@@ -1,0 +1,20 @@
+;calculator.vspl by DiamondCoder1000
+#include "A:/sys/libvspl.vspl
+
+function calculator(){
+  print("calculator");
+  println();
+  print("type 'exit' to exit");
+  while (true) {
+    print("first num:");
+    a = input_string();
+    if (a == "exit"){
+      return();
+    }
+    copy(A, B);
+    print("second num:);
+    b = input_string();
+    add(A, B);
+    print(B);
+  }
+}
