@@ -7,4 +7,5 @@ function input_string()
   ind(B, A);
   xor (B, B);
   outa(B);
+  return(A);
 }
