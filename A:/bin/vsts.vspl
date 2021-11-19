@@ -51,7 +51,8 @@ function main()
     doneExec();
   }
   else if(x == "/apps/calculator.vspl"){
-    print("WIP");
+    exec(0x304001);
+    doneExec();
   }
   else {
     print(ERROR);
