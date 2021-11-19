@@ -19,7 +19,7 @@ function init()
   jump(main);
 }
 string ERROR = "Error: command or file not found";
-string prompt = "shell>";
+string prompt = "shell#";
 string x;
 
 function main()
