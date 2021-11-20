@@ -79,7 +79,7 @@ shell_init:
   load A, shell_init_string
   call print_char
   xor A,A
-  %include A:/bin/shell.asm
+  %include A:/bin/vsts.vspl
   call init
   
 ;end
