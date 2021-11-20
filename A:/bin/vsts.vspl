@@ -1,6 +1,6 @@
 //VSTS(very simple text shell) by DiamondCoder1000
 
-string thingy = "CrylonOS 0.1-beta8";
+string version = "CrylonOS 0.1-beta8";
 
 //the includes
 
