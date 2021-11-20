@@ -46,11 +46,11 @@ function main()
   else if (x == "killall"){
     killall();
   }
-  else if (x == "/apps/hello_test.asm"){
+  else if (x == "testprogram"){
     exec($300001);
     doneExec();
   }
-  else if(x == "/apps/calculator.vspl"){
+  else if(x == "calculator"){
     exec(0x304001);
     doneExec();
   }
