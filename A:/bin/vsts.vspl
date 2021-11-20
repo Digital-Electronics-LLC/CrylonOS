@@ -1,6 +1,8 @@
 //VSTS(very simple text shell) by DiamondCoder1000
 
-string thingy = "CrylonOS 0.1-beta6";
+string thingy = "CrylonOS 0.1-beta8";
+
+//the includes
 
 #include "A:/bin/user/user.asm"
 #include "A:/bin/exit/exit.asm"
@@ -12,6 +14,8 @@ string thingy = "CrylonOS 0.1-beta6";
 #include "A:/bin/killall/killall.vspl"
 #include "A:/src/Crylix-main/kernel/libs/libvspl/"
 #include "A:/sys/process.vspl"
+
+
 
 function init()
 {
