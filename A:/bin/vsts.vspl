@@ -16,7 +16,7 @@ string version = "CrylonOS 0.1-beta8";
 #include "A:/sys/process.vspl"
 
 
-
+//init
 function init()
 {
   print(thingy);
