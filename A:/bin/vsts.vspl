@@ -1,6 +1,6 @@
 //VSTS(very simple text shell) by DiamondCoder1000
 
-string thingy = "CrylonOS 0.1-beta5";
+string thingy = "CrylonOS 0.1-beta6";
 
 #include "A:/bin/user/user.asm"
 #include "A:/bin/exit/exit.asm"
