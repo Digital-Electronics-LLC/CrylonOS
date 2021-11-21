@@ -28,7 +28,7 @@ function mult(a, b)
   add(a, x);
   dec(b);
   if (b == y){
-    return;
+    return x;
   }
   else{
     jump(28);
