@@ -1,6 +1,6 @@
 //VSTS(very simple text shell) by DiamondCoder1000
 
-string version = "CrylonOS 0.1-beta8";
+string version = "CrylonOS 0.1-beta9";
 
 //the includes
 
@@ -12,7 +12,7 @@ string version = "CrylonOS 0.1-beta8";
 #include "A:/bin/ver/ver.asm"
 #include "A:/bin/about/about.asm"
 #include "A:/bin/killall/killall.vspl"
-#include "A:/src/Crylix-main/kernel/libs/libvspl/"
+#include "A:/lib/libv"
 #include "A:/sys/process.vspl"
 
 
