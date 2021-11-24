@@ -13,6 +13,6 @@ function clearScreen(){
 /** Draws the (x, y) pixel. */
 function void drawPixel(int x, int y) {
     uint address;
-    let address = (y*32) + (x/16);
+    address = (y*32) + (x/16);
     poke(SCREEN_BASE + address, 16777216);
 }
