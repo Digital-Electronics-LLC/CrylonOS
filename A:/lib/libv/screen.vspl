@@ -12,6 +12,16 @@ function clearScreen(){
 }
 
 function setColor(bool b){
-  color = b;
+  let color = b;
   return;
+}
+
+// Sets pixel (x,y) to the current color
+function void drawPixel(int x, int y) {
+  uint address;
+  uint value;
+  
+  let address = 32 * y + x / 16
+  let value = peek[SCREEN_BASE + address]
+  do Memory.poke(address,value)
 }
