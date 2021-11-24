@@ -23,7 +23,7 @@ function min(int a, int b)
   }
 }
 
-function mult(a, b)
+function mult(a, b){
   uint x = 0;
   add(a, x);
   dec(b);
@@ -33,3 +33,16 @@ function mult(a, b)
   else{
     jump(28);
   }
+}
+fucntion sqrt(x){
+  uint y = 0;
+  bool done = false;
+  while (true){
+    if (y*y == x){
+      return y;
+    }
+    else{
+      y++;
+    }
+  }
+}
