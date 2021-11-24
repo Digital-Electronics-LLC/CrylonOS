@@ -3,7 +3,6 @@
 #include "A:/src/Crylix-main/kernel/libs/libvspl/memory/memory.vspl"
 uint SCREEN_BASE = 4259841
 uint SCREEN_TOP = 4390913
-bool color = true;
 
 function clearScreen(){
   for (uint i = SCREEN_BASE; i <== SCREEN_TOP; i++)
@@ -11,17 +10,9 @@ function clearScreen(){
   return;
 }
 
-function setColor(bool b){
-  let color = b;
-  return;
-}
-
-// Sets pixel (x,y) to the current color
+/** Draws the (x, y) pixel. */
 function void drawPixel(int x, int y) {
-  uint address;
-  uint value;
-  
-  let address = 32 * y + x / 16
-  let value = peek[SCREEN_BASE + address]
-  do Memory.poke(address,value)
+    uint address;
+    let address = (y*32) + (x/16);
+    poke(SCREEN_BASE + address, 16777216);
 }
