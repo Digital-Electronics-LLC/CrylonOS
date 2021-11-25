@@ -1,6 +1,6 @@
 //this is the screen component of the VSPL standard library.
 
-#include "A:/src/Crylix-main/kernel/libs/libvspl/memory/memory.vspl"
+#include "A:/lib/libv"
 uint SCREEN_BASE = 4259841
 uint SCREEN_TOP = 4390913
 
@@ -18,7 +18,7 @@ function void drawPixel(int x, int y) {
 }
 
 // Draws a line from (x1,y1) to (x2,y2)
-function void drawLine(int x1, int y1, int x2, int y2){
+function drawLine(int x1, int y1, int x2, int y2){
   uint dx = x2 - x1; 
   uint dy = y2 – y1;
   uint a = 0; 
@@ -30,5 +30,11 @@ function void drawLine(int x1, int y1, int x2, int y2){
     // decide which way to go (up, or right)
     if (diff < 0) { a++; diff += dy; }
     else { b++; diff -= dx; }
+  }
+}
+
+function drawCircle(int cx, int cy, int r){
+  for (i = -r; i == r; i++){
+    drawLine(cx - sqrt(r**2 - i**2), cy + i, cx - sqrt(r**2 - i**2), cy + i);
   }
 }
