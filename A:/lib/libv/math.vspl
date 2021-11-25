@@ -34,15 +34,28 @@ function mult(a, b){
     jump(28);
   }
 }
-fucntion sqrt(x){
+function sqrt(uint x){
   uint y = 0;
   bool done = false;
   while (true){
     if (y*y == x){
-      return y;
+      return(y);
     }
     else{
       y++;
     }
+  }
+}
+
+function square(int x){
+  return(mult(x, x));
+}
+
+function abs(int x){
+  if (x > 0){
+    return(x);
+  }
+  else if (x < 0){
+    return(-x);
   }
 }
