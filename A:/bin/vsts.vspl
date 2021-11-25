@@ -54,9 +54,16 @@ function main()
     exec($300001);
     doneExec();
   }
-  else if(x == "calculator"){
+  else if (x == "calculator"){
     exec(0x304001);
     doneExec();
+  }
+  else if (x == "graphicsTest"){
+    exec(0x308001);
+    doneExec();
+  }
+  else if (x == "apps"){
+    print("graphicsTest, calculator, testprogram")
   }
   else {
     print(ERROR);
