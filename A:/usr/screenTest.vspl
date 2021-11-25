@@ -1,0 +1,5 @@
+#include "A:/lib/libv"
+function screenTest(){
+  drawCircle(200, 200, 40)
+  drawLine(10,10,70,10);
+}
