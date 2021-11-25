@@ -16,3 +16,19 @@ function void drawPixel(int x, int y) {
     address = (y*32) + (x/16);
     poke(SCREEN_BASE + address, 16777216);
 }
+
+// Draws a line from (x1,y1) to (x2,y2)
+function void drawLine(int x1, int y1, int x2, int y2){
+  uint dx = x2 - x1; 
+  uint dy = y2 – y1;
+  uint a = 0; 
+  uint b = 0; 
+  uint diff = 0;
+  
+  while ((a <= dx) and (b <= dy)){
+    drawPixel(x + a, y + b);
+    // decide which way to go (up, or right)
+    if (diff < 0) { a++; diff += dy; }
+    else { b++; diff -= dx; }
+  }
+}
