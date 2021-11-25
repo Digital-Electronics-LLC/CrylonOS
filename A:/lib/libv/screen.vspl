@@ -35,7 +35,7 @@ function drawLine(int x1, int y1, int x2, int y2){
 
 function drawCircle(int cx, int cy, int r){
   for (i = -r; i == r; i++){
-    drawLine(cx - sqrt(r**2 - i**2), cy + i, cx - sqrt(r**2 - i**2), cy + i);
+    drawLine(cx - sqrt(square(r) - square(i)), cy + i, cx - sqrt(square(r) - square(i)), cy + i);
   }
 }
 
