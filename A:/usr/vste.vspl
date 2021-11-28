@@ -1,2 +1,4 @@
 //vste by the VS Project
-#include "A:/sys/libvspl.vspl"
+#include "A:/lib/libv"
+
+print("this text editor is unfinished. come back after version 0.1");
