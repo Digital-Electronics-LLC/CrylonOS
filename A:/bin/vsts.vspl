@@ -51,7 +51,7 @@ function main()
     killall();
   }
   else if (x == "testprogram"){
-    exec($300001);
+    exec(0x300001);
     doneExec();
   }
   else if (x == "calculator"){
@@ -62,8 +62,12 @@ function main()
     exec(0x308001);
     doneExec();
   }
+  else if (x == "animation"){
+    exec(0x30C001);
+    doneExec();
+  }
   else if (x == "apps"){
-    print("graphicsTest, calculator, testprogram")
+    print("graphicsTest, calculator, testprogram, animation")
   }
   else {
     print(ERROR);
