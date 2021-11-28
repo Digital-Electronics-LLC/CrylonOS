@@ -9,15 +9,15 @@ function main()
 {
   string string_thing = "File System Mounted";
   string string2 = "A:/src/Crylix-main/kernel/vsfs/vsfs_main.vspl"
-  int ssd_size = "8 megawords"
+  int ssd_size = "16 megawords"
   
   
   
-  save(A, string_thing);
-  print();
-  save(A, string2);
-  print();
-  save(A, ssd_size);
-  print();
-  xor(A, A);
+print(string_thing);
+println();
+print(string2);
+println();
+print("drive size:")
+println();
+print(ssd_size);
 }
