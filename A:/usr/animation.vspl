@@ -1,1 +1,12 @@
+#include "A:/lib/libv"
 
+function animation(){
+  x = 0
+  a = 10
+  
+  while (x < 512){
+    drawCircle(a, 128, 30);
+    x++;
+    clearScreen();
+  } 
+}
